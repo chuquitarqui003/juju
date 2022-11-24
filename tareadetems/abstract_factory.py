@@ -5,28 +5,28 @@ class Shop(object):
     def get__item__description(self):
         item=self.item_factory.get_item()
 
-        print("item model",self.item_factory.model())
-        print("item name",item.name())
-        print("item color",self.item_factory.color())
+        print("modelo del articulo",self.item_factory.model())
+        print("nombre del articulo",item.name())
+        print("color del articulo",self.item_factory.color())
 
 
 class Shoes(object):
     def name(self):
-        return"Shoes"
+        return"zapatos"
     def __str__(self):
-        return"Shoes"
+        return"zapatos"
 
 class mobile(object):
     def name(self):
-        return"nokia"
+        return"celular"
     def __str__(self):
-        return"nokia"
+        return"celular"
 
 class car(object):
     def name(self):
-        return"toyota"
+        return"carro"
     def __str__(self):
-        return"toyota"
+        return"carro"
 
 class ShoesFactory(object):
     def get_item(self):
@@ -34,7 +34,7 @@ class ShoesFactory(object):
     def model(self):
         return"MEN101"
     def color(self):
-        return"amarillo"
+        return"negro"
 
 class carFactory(object):
     def get_item(self):
